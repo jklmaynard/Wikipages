@@ -2,6 +2,6 @@
 
 <ul>
   <% @divisions.each do |division| %>
-    <li><%= division.name %></li>
+    <li><%= link_to division.name, division_path(division) %></li>
   <% end %>
 </ul>
