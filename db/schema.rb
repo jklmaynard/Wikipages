@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150316221525) do
+ActiveRecord::Schema.define(version: 20150316233314) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "divisions", force: :cascade do |t|
     t.string   "name"
-    t.string   "classifiaction"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "classifications"
   end
 
 end
